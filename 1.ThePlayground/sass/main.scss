@@ -6,4 +6,9 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/logo';
+@import 'components/nav';
+
+@import 'layouts/header';
+@import 'layouts/grid';
 @import 'pages/home';

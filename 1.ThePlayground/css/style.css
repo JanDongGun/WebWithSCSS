@@ -22,4 +22,58 @@ body {
   line-height: 1.7;
 }
 
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.logo__play {
+  color: var(--primary-color);
+}
+
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+  display: inline-block;
+  margin-left: 5rem;
+}
+.nav__item:last-child {
+  margin-left: 7.5rem;
+}
+.nav__link, .nav__link:link, .nav__link:visited {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.nav__link:hover, .nav__link:link:hover, .nav__link:visited:hover {
+  color: var(--primary-color);
+}
+.nav__login {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid;
+  border-radius: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 4rem;
+}
+
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
