@@ -6,7 +6,7 @@
 
 ### Prerequisites
 
-\*npm
+- npm
 
 I use live-server and sass npm
 
@@ -32,8 +32,8 @@ I use live-server and sass npm
 
 Trần Nguyễn Đông Gon - [Facebook](https://www.facebook.com/profile.php?id=100024824135346) - [Email Me](mailto:donggontrannguyen@gmail.com)
 
-Project Link:[https://github.com/JanDongGun/WebWithSCSS](https://github.com/JanDongGun/WebWithSCSS)
+Project Link : [https://github.com/JanDongGun/WebWithSCSS](https://github.com/JanDongGun/WebWithSCSS)
 
 ### Acknowledgements
 
-\* [Font Awesome](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
