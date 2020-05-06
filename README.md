@@ -12,21 +12,21 @@ I use live-server and sass npm
 
 1. Install live-server
 
-   'npm install -g live-server'
+   `npm install -g live-server`
 
 2. Install sass
 
-   'npm install -g sass'
+   `npm install -g sass`
 
 ### Installation
 
 1. Clone the repo
 
-   'git clone https://github.com/JanDongGun/WebWithSCSS.git'
+   `git clone https://github.com/JanDongGun/WebWithSCSS.git`
 
 2. Install NPM packages
 
-   'npm install'
+   `npm install`
 
 ### Contact
 
