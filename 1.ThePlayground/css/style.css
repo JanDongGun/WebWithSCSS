@@ -1,3 +1,25 @@
+:root {
+  --font-default: "Poppins", sans-serif;
+  --primary-color: #ffc87a;
+  --text-color: #1a2b5f;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-default);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+}
 
 /*# sourceMappingURL=style.css.map */
