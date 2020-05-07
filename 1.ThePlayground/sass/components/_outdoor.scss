@@ -13,7 +13,7 @@
   }
 
   &__description {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
     font-size: 2rem;
     color: var(--text-color-1);
   }
@@ -28,6 +28,42 @@
     span {
       border-bottom: 2px solid;
       line-height: 1.7;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__item {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-left: 4rem;
+
+    &::before {
+      content: '';
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: black;
+    }
+
+    &:nth-child(1)::before {
+      background-color: var(--violet-color);
+    }
+
+    &:nth-child(2)::before {
+      background-color: var(--green-color);
+    }
+
+    &:nth-child(3)::before {
+      background-color: var(--sky-color);
+    }
+
+    &:nth-child(4)::before {
+      background-color: var(--brown-color);
     }
   }
 }

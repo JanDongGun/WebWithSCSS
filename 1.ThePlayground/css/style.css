@@ -129,6 +129,10 @@ table {
   --font-default: "Poppins", sans-serif;
   --primary-color: #ffc87a;
   --primary-light-color: #ffea7b;
+  --violet-color: #ff6adf;
+  --green-color: #92fa3c;
+  --sky-color: #1ec0f4;
+  --brown-color: #ff899c;
   --text-color: #1a2b5f;
   --text-color-1: #7d86a4;
 }
@@ -275,7 +279,7 @@ body {
   padding-right: 3rem;
 }
 .outdoor__description {
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   font-size: 2rem;
   color: var(--text-color-1);
 }
@@ -289,6 +293,36 @@ body {
 .outdoor__info span {
   border-bottom: 2px solid;
   line-height: 1.7;
+  font-size: 1.7rem;
+}
+.outdoor__item {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-left: 4rem;
+}
+.outdoor__item::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: black;
+}
+.outdoor__item:nth-child(1)::before {
+  background-color: var(--violet-color);
+}
+.outdoor__item:nth-child(2)::before {
+  background-color: var(--green-color);
+}
+.outdoor__item:nth-child(3)::before {
+  background-color: var(--sky-color);
+}
+.outdoor__item:nth-child(4)::before {
+  background-color: var(--brown-color);
 }
 
 .header {
