@@ -128,6 +128,7 @@ table {
 :root {
   --font-default: "Poppins", sans-serif;
   --primary-color: #ffc87a;
+  --primary-light-color: #ffea7b;
   --text-color: #1a2b5f;
   --text-color-1: #7d86a4;
 }
@@ -206,15 +207,52 @@ body {
   border-radius: 30px;
   padding: 1.8rem 3.5rem;
   margin: 0rem 1.2rem;
-  display: inline-block;
 }
 .btn:focus {
   outline: none;
 }
 .btn--yellow {
-  background-color: var(--primary-color);
-  border: 1px solid transparent;
-  box-shadow: 0 2rem 2rem rgba(var(--primary-color), 0.3);
+  background-image: linear-gradient(to bottom, var(--primary-light-color), var(--primary-color));
+  border: none;
+  box-shadow: 0 2rem 4rem rgba(255, 200, 122, 0.5);
+}
+
+.gallery {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  flex: 0 0 23%;
+  padding: 3rem;
+  border-radius: 20px;
+}
+.gallery__item:nth-child(1) {
+  box-shadow: 0 2rem 3rem rgba(255, 151, 195, 0.2);
+}
+.gallery__item:nth-child(2) {
+  box-shadow: 0 2rem 3rem rgba(255, 112, 109, 0.2);
+}
+.gallery__item:nth-child(3) {
+  box-shadow: 0 2rem 3rem rgba(133, 152, 255, 0.2);
+}
+.gallery__item:nth-child(4) {
+  box-shadow: 0 2rem 3rem rgba(255, 200, 122, 0.25);
+}
+.gallery__title {
+  margin: 2.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.gallery__link:link, .gallery__link:visited {
+  text-decoration: none;
+  color: var(--text-color-1);
+  transition: 0.3s;
+  display: inline-block;
+}
+.gallery__link:link:hover, .gallery__link:visited:hover {
+  transform: translateX(10px);
 }
 
 .header {
@@ -237,7 +275,7 @@ body {
 
 .banner {
   max-width: 72rem;
-  margin: 14rem auto;
+  margin: 15rem auto;
   text-align: center;
 }
 .banner__sub {
@@ -245,6 +283,10 @@ body {
   color: var(--text-color-1);
   font-weight: 400;
   margin-bottom: 3.5rem;
+}
+
+.section-gallery {
+  margin-bottom: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

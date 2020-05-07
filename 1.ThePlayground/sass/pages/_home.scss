@@ -1,6 +1,6 @@
 .banner {
   max-width: 72rem;
-  margin: 14rem auto;
+  margin: 15rem auto;
   text-align: center;
 
   &__sub {
@@ -9,4 +9,8 @@
     font-weight: 400;
     margin-bottom: 3.5rem;
   }
+}
+
+.section-gallery {
+  margin-bottom: 15rem;
 }

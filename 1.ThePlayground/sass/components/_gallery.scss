@@ -1,0 +1,36 @@
+.gallery {
+  @include flex(stretch, space-between, wrap);
+  &__item {
+    flex: 0 0 23%;
+    padding: 3rem;
+    border-radius: 20px;
+  }
+
+  &__item:nth-child(1) {
+    box-shadow: 0 2rem 3rem rgba($pink-color, 0.2);
+  }
+  &__item:nth-child(2) {
+    box-shadow: 0 2rem 3rem rgba($red-color, 0.2);
+  }
+  &__item:nth-child(3) {
+    box-shadow: 0 2rem 3rem rgba($violet-color, 0.2);
+  }
+  &__item:nth-child(4) {
+    box-shadow: 0 2rem 3rem rgba($primary-color, 0.25);
+  }
+  &__title {
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: var(--text-color-1);
+    transition: 0.3s;
+    display: inline-block;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+}
