@@ -1,3 +1,3 @@
 ### Template Web
 
-![](img/ThePlayground.png)
+![](images/ThePlayground.png)
