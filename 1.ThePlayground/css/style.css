@@ -275,7 +275,7 @@ body {
   padding-right: 3rem;
 }
 .outdoor__description {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 2rem;
   color: var(--text-color-1);
 }
@@ -288,6 +288,7 @@ body {
 }
 .outdoor__info span {
   border-bottom: 2px solid;
+  line-height: 1.7;
 }
 
 .header {
