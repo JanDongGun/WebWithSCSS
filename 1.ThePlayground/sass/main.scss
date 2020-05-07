@@ -1,3 +1,5 @@
+@import 'resetCss/reset';
+
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
@@ -8,6 +10,7 @@
 
 @import 'components/logo';
 @import 'components/nav';
+@import 'components/button';
 
 @import 'layouts/header';
 @import 'layouts/grid';

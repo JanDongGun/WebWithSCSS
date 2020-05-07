@@ -1,0 +1,12 @@
+.banner {
+  max-width: 72rem;
+  margin: 14rem auto;
+  text-align: center;
+
+  &__sub {
+    font-size: 2.2rem;
+    color: var(--text-color-1);
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+  }
+}
