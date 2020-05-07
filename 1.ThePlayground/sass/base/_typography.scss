@@ -3,10 +3,15 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .heading-primary {
   font-size: 6.5rem;
   font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 600;
 }

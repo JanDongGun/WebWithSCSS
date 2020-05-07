@@ -1,0 +1,32 @@
+.outdoor {
+  &__box {
+    margin-bottom: 15rem;
+    @include flex(center, space-between, wrap);
+  }
+
+  &__img {
+    width: 50%;
+  }
+  &__content {
+    width: 45%;
+    padding-right: 3rem;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--text-color-1);
+  }
+
+  &__info {
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
+
+    span {
+      border-bottom: 2px solid;
+    }
+  }
+}

@@ -148,12 +148,17 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--text-color);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .heading-primary {
   font-size: 6.5rem;
   font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .u-margin-bottom-small {
@@ -255,6 +260,36 @@ body {
   transform: translateX(10px);
 }
 
+.outdoor__box {
+  margin-bottom: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.outdoor__img {
+  width: 50%;
+}
+.outdoor__content {
+  width: 45%;
+  padding-right: 3rem;
+}
+.outdoor__description {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--text-color-1);
+}
+.outdoor__info {
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.outdoor__info:last-of-type {
+  margin-bottom: 4rem;
+}
+.outdoor__info span {
+  border-bottom: 2px solid;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -286,7 +321,7 @@ body {
 }
 
 .section-gallery {
-  margin-bottom: 15rem;
+  margin-bottom: 17rem;
 }
 
 /*# sourceMappingURL=style.css.map */
