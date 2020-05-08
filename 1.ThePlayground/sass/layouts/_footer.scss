@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 6rem;
+  border-top: 4px solid var(--text-color);
+  margin-bottom: 19rem;
+  &__main {
+    @include flex(flex-start, space-between, wrap);
+    width: 85%;
+    margin-bottom: 19rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-color-2);
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  &__sub {
+    border-top: 2px solid var(--grey-light-color-3);
+    padding-top: 3rem;
+    @include flex(stretch, flex-start, wrap);
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+    font-weight: 400;
+    &:nth-child(2) {
+      margin-right: auto;
+      margin-left: 2rem;
+    }
+  }
+}
