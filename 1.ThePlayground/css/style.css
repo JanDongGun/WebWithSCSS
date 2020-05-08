@@ -165,8 +165,22 @@ body {
   font-weight: 600;
 }
 
+.heading-tertiary {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.heading-quaternary {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 2.5rem;
+}
+
+.u-text-center {
+  text-align: center;
 }
 
 .logo {
@@ -352,6 +366,16 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.partners__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 2px solid var(--text-color);
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -384,6 +408,11 @@ body {
 
 .section-gallery {
   margin-bottom: 17rem;
+}
+
+.section-partners {
+  max-width: 71%;
+  margin: 0 auto 17rem auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+.partners {
+  &__logos {
+    @include flex(center, space-between, wrap);
+    border-top: 2px solid var(--text-color);
+    padding-top: 5rem;
+    margin-top: 5rem;
+  }
+}
