@@ -1,0 +1,16 @@
+.contact {
+  &__connect {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+
+    &--yellow {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+  }
+
+  &__show {
+    @include flex(center, space-between);
+  }
+}

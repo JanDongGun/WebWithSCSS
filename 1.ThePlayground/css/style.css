@@ -166,7 +166,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -177,6 +177,10 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 2.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 3.5rem;
 }
 
 .u-text-center {
@@ -376,6 +380,22 @@ body {
   margin-top: 5rem;
 }
 
+.contact__connect {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+}
+.contact__connect--yellow {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.contact__show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -413,6 +433,10 @@ body {
 .section-partners {
   max-width: 71%;
   margin: 0 auto 17rem auto;
+}
+
+.section-contact {
+  margin-bottom: 17rem;
 }
 
 /*# sourceMappingURL=style.css.map */
