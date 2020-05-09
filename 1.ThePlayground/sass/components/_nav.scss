@@ -1,6 +1,9 @@
 .nav {
   &__list {
     list-style: none;
+    @include respond(tab-land) {
+      margin-top: 2rem;
+    }
   }
 
   &__item {
@@ -9,6 +12,13 @@
 
     &:last-child {
       margin-left: 7.5rem;
+      @include respond(phone) {
+        margin-left: 2rem;
+      }
+    }
+
+    @include respond(phone) {
+      margin-left: 1.5rem;
     }
   }
 
@@ -30,5 +40,9 @@
     padding: 10px 25px;
     border: 1px solid;
     border-radius: 30px;
+
+    @include respond(phone) {
+      padding: 15px 20px;
+    }
   }
 }

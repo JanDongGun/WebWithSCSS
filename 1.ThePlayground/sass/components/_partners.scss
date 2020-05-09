@@ -4,5 +4,15 @@
     border-top: 2px solid var(--text-color);
     padding-top: 5rem;
     margin-top: 5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo:not(:last-child) {
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
   }
 }

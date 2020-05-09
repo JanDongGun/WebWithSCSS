@@ -1,4 +1,8 @@
 .header {
   @include flex(center, space-between);
   margin-top: 4rem;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
 }

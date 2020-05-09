@@ -2,10 +2,45 @@
   padding-top: 6rem;
   border-top: 4px solid var(--text-color);
   margin-bottom: 19rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 10rem;
+  }
   &__main {
     @include flex(flex-start, space-between, wrap);
     width: 85%;
     margin-bottom: 19rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 12rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    @include respond(phone) {
+      margin-bottom: 3rem;
+      width: 100%;
+    }
+  }
+
+  &__list {
+    @include respond(phone) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__link:link,
@@ -21,14 +56,29 @@
     border-top: 2px solid var(--grey-light-color-3);
     padding-top: 3rem;
     @include flex(stretch, flex-start, wrap);
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__copyright {
     font-size: 1.2rem;
     font-weight: 400;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
     &:nth-child(2) {
       margin-right: auto;
       margin-left: 2rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-left: 0;
+      }
     }
   }
 }

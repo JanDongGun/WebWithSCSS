@@ -6,4 +6,8 @@
 .container {
   max-width: 117rem;
   margin: 0 auto;
+
+  @include respond(tab-land) {
+    padding: 0 3rem;
+  }
 }

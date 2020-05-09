@@ -3,6 +3,19 @@
   margin: 15rem auto;
   text-align: center;
 
+  @include respond(tab-land) {
+    margin: 12rem auto;
+  }
+
+  @include respond(tab-port) {
+    margin: 8rem auto;
+  }
+
+  @include respond(phone) {
+    width: 80%;
+    margin: 6rem auto;
+  }
+
   &__sub {
     font-size: 2.2rem;
     color: var(--text-color-1);
@@ -13,15 +26,46 @@
 
 .section-gallery {
   margin-bottom: 17rem;
+
+  @include respond(tab-land) {
+    margin-bottom: 12rem;
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .section-partners {
   max-width: 71%;
   margin: 0 auto 17rem auto;
+
+  @include respond(tab-land) {
+    margin: 0 auto 12rem auto;
+  }
+
+  @include respond(tab-port) {
+    margin: 0 auto 8rem auto;
+  }
 }
 
 .section-contact {
   margin-bottom: 17rem;
+  @include respond(tab-land) {
+    margin-bottom: 12rem;
+  }
+
+  @include respond(tab-port) {
+    margin-bottom: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .section-sub {

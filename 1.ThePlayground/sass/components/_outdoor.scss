@@ -2,17 +2,54 @@
   &__box {
     margin-bottom: 15rem;
     @include flex(center, space-between, wrap);
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__box:last-child {
     @include flex(flex-end, space-between, wrap);
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__span {
+    display: block;
+
+    @include respond(tab-land) {
+      display: inline;
+    }
   }
 
   &__img {
     width: 50%;
+    @include respond(tab-land) {
+      margin-bottom: 5rem;
+    }
+
+    img {
+      width: 100%;
+    }
   }
   &__content {
     width: 43%;
+    @include respond(tab-land) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(tab-land) {
+      width: 70%;
+      text-align: center;
+    }
   }
 
   &__description {
@@ -42,6 +79,14 @@
     position: relative;
     padding-left: 4rem;
 
+    @include respond(tab-land) {
+      padding-left: 6rem;
+    }
+
+    @include respond(tab-port) {
+      padding-left: 0;
+    }
+
     &::before {
       content: '';
       width: 2.5rem;
@@ -50,7 +95,14 @@
       top: 0;
       left: 0;
       border-radius: 50%;
-      background-color: black;
+
+      @include respond(tab-land) {
+        left: 30%;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     &:nth-child(1)::before {
@@ -73,6 +125,14 @@
   &__features {
     max-width: 80%;
     @include flex(stretch, space-between, wrap);
+    @include respond(tab-land) {
+      max-width: 100%;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &-item {
       flex: 0 0 42%;
@@ -80,6 +140,16 @@
 
       &:nth-child(n + 3) {
         margin-bottom: 0;
+
+        @include respond(phone) {
+          margin-bottom: 4.5rem;
+        }
+      }
+
+      &:last-child {
+        @include respond(phone) {
+          margin-bottom: 0rem;
+        }
       }
     }
 

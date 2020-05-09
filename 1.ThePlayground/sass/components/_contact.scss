@@ -11,6 +11,29 @@
   }
 
   &__show {
-    @include flex(center, space-between);
+    @include flex(center, space-between, wrap);
+    @include respond(tab-land) {
+      width: 80%;
+      margin: auto;
+    }
+
+    // @include respond(tab-port) {
+    //   flex-direction: column;
+    // }
+  }
+
+  &__img {
+    @include respond(tab-land) {
+      flex: 0 0 47%;
+      width: 80%;
+      margin-bottom: 5rem;
+      &:nth-child(n + 3) {
+        margin-bottom: 0rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 30%;
+    }
   }
 }

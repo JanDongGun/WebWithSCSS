@@ -4,3 +4,28 @@
   justify-content: $justify-content;
   flex-wrap: $wrap;
 }
+
+@mixin respond($bp) {
+  // breakpoint
+
+  @if $bp == tab-land {
+    @media (max-width: 75em) {
+      //1200 / 16
+      @content;
+    }
+  }
+
+  @if $bp == tab-port {
+    @media (max-width: 50em) {
+      //800 / 16
+      @content;
+    }
+  }
+
+  @if $bp == phone {
+    @media (max-width: 31.25em) {
+      //500 / 16
+      @content;
+    }
+  }
+}
