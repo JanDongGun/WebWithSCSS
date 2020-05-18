@@ -157,6 +157,12 @@ body {
   font-style: normal;
 }
 
+.heading-tertiary {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
 .text-center {
   text-align: center;
 }
@@ -225,6 +231,36 @@ body {
   font-weight: 600;
   border-radius: 50px;
   box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.2);
+}
+
+.feature {
+  width: 100%;
+  margin-bottom: 19rem;
+}
+.feature__img {
+  width: 100%;
+}
+.feature__background {
+  background-color: #f5faff;
+  margin-top: -5px;
+}
+.feature__background--none {
+  background-color: transparent;
+}
+.feature__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.feature__item {
+  flex: 0 0 38%;
+}
+.feature__item img {
+  width: 100%;
+}
+.feature__des {
+  line-height: 1.6;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
