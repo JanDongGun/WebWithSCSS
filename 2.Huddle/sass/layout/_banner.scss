@@ -1,0 +1,41 @@
+.banner {
+  max-width: 78%;
+  margin-top: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19rem;
+  text-align: center;
+
+  &__top {
+    margin-bottom: 10rem;
+  }
+
+  &__background {
+    margin-bottom: 12.5rem;
+  }
+  &__sub {
+    font-size: 1.6rem;
+    margin: 3.5rem auto;
+    width: 50%;
+    line-height: 1.6;
+  }
+
+  &__number {
+    display: flex;
+    text-align: start;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__number-icon {
+  }
+  &__number-num {
+    font-size: 7rem;
+    font-weight: 700;
+    margin: 2rem 0 3.5rem 0;
+  }
+  &__number-des {
+    font-size: 2rem;
+    color: #828b92;
+  }
+}

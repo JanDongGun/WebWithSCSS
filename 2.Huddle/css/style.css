@@ -150,6 +150,17 @@ body {
   margin: 0 auto;
 }
 
+.heading-primary {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -166,6 +177,54 @@ body {
   padding: 1.5rem 3rem;
   border: 1px solid;
   border-radius: 25px;
+}
+
+.banner {
+  max-width: 78%;
+  margin-top: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19rem;
+  text-align: center;
+}
+.banner__top {
+  margin-bottom: 10rem;
+}
+.banner__background {
+  margin-bottom: 12.5rem;
+}
+.banner__sub {
+  font-size: 1.6rem;
+  margin: 3.5rem auto;
+  width: 50%;
+  line-height: 1.6;
+}
+.banner__number {
+  display: flex;
+  text-align: start;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner__number-num {
+  font-size: 7rem;
+  font-weight: 700;
+  margin: 2rem 0 3.5rem 0;
+}
+.banner__number-des {
+  font-size: 2rem;
+  color: #828b92;
+}
+
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  background-color: #ff52bf;
+  text-decoration: none;
+  color: #f5faff;
+  padding: 3.5rem 10rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
