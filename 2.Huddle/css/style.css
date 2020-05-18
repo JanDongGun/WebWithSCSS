@@ -167,6 +167,10 @@ body {
   text-align: center;
 }
 
+.u-margin-bottom-big {
+  margin-bottom: 4rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -201,7 +205,7 @@ body {
 }
 .banner__sub {
   font-size: 1.6rem;
-  margin: 3.5rem auto;
+  margin: 4rem auto;
   width: 50%;
   line-height: 1.6;
 }
@@ -230,7 +234,7 @@ body {
   padding: 3.5rem 10rem;
   font-weight: 600;
   border-radius: 50px;
-  box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.25);
 }
 
 .feature {
@@ -261,6 +265,10 @@ body {
 .feature__des {
   line-height: 1.6;
   margin-top: 3rem;
+}
+
+.ready {
+  margin-bottom: 18rem;
 }
 
 /*# sourceMappingURL=style.css.map */
