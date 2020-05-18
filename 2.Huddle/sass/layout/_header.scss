@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    &__logo{
+
+    }
+
+    &__img{
+        height: 3.5rem;
+    }
+
+    &__btn{
+        font-family: $font-body;
+        text-decoration: none;
+        color: $color-primary;
+        padding: 1.5rem 3rem;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+}

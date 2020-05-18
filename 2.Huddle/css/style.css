@@ -102,6 +102,10 @@ section {
   display: block;
 }
 
+body {
+  line-height: 1;
+}
+
 ol,
 ul {
   list-style: none;
@@ -123,6 +127,45 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #00252e;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+.header__img {
+  height: 3.5rem;
+}
+.header__btn {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ff52bf;
+  padding: 1.5rem 3rem;
+  border: 1px solid;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

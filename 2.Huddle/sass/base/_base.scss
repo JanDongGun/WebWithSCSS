@@ -1,0 +1,20 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: $font-body;
+    color: $color-dark;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+}
