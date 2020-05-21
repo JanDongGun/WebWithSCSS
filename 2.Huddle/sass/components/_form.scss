@@ -1,0 +1,30 @@
+.form {
+  &__input {
+    width: 60%;
+    background-color: $color-pale;
+    color: $color-dark;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    padding: 2rem 1rem;
+    margin-right: 4rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: $color-pale;
+    background-color: $color-primary;
+    padding: 2rem 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

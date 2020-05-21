@@ -1,0 +1,69 @@
+.footer {
+  color: $color-pale;
+  &__main-bg {
+    background-color: $color-dark;
+    margin-top: -2px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+  }
+
+  &__des {
+    max-width: 24%;
+  }
+
+  &__form {
+    max-width: 41%;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.7rem;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    line-height: 1.6;
+    font-weight: 600;
+
+    &--form {
+      max-width: 62%;
+    }
+  }
+
+  &__contact-item {
+    display: flex;
+    margin-bottom: 1.8rem;
+  }
+
+  &__contact-icon {
+    margin-right: 1.5rem;
+  }
+
+  &__social {
+    margin-top: 5rem;
+
+    a:link,
+    a:visited {
+      font-size: 3rem;
+      margin-right: 2rem;
+      color: $color-pale;
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    -webkit-mask-image: url(../../images/logo.svg);
+    display: block;
+    width: 24rem;
+    height: 3.9rem;
+    background-color: $color-pale;
+  }
+}
