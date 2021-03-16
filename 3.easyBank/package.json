@@ -1,0 +1,16 @@
+{
+  "name": "3.easybank",
+  "version": "1.0.0",
+  "description": "SOURCE --> [Frontend Mentor](https://www.frontendmentor.io/challenges)",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch app/scss/style.scss dist/style.css",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
