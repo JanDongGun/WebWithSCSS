@@ -45,15 +45,32 @@ a:hover {
 // Buttons
 button,
 .button {
-  padding: 1.6rem 3rem;
+  padding: 1.4rem 3.5rem;
   border: none;
   border-radius: 50px;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   color: $White;
   cursor: pointer;
   font-weight: 700;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 button:focus {
   outline: none;
+}
+
+//  visibility
+.hide-for-mobile {
+  @include breakingpoint-down(medium) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  @include breakingpoint-up(large) {
+    display: none;
+  }
 }

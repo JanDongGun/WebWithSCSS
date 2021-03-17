@@ -41,21 +41,42 @@ a:hover {
 
 button,
 .button {
-  padding: 1.6rem 3rem;
+  padding: 1.4rem 3.5rem;
   border: none;
   border-radius: 50px;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   cursor: pointer;
   font-weight: 700;
+  transition: all 0.2s ease;
+}
+button:hover,
+.button:hover {
+  opacity: 0.75;
 }
 
 button:focus {
   outline: none;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header nav {
-  padding: 24px;
+  padding: 1.7rem 2.4rem;
+}
+.header__logo img {
+  width: 14.1rem;
+  height: 2.2rem;
 }
 .header__menu > span {
   display: block;
@@ -68,6 +89,28 @@ button:focus {
 }
 .header__links a {
   font-size: 1.4rem;
+  transition: color 0.4s ease-in;
+  position: relative;
+}
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+.header__links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  width: 0%;
+  height: 5px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 20px;
+  transition: width 0.2s ease-in;
+}
+.header__links a:hover {
+  color: #2d314d;
+}
+.header__links a:hover::before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
