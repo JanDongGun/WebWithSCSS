@@ -71,6 +71,26 @@ button:focus {
   }
 }
 
+.header.open .header__menu > span:first-child {
+  transform: rotate(45deg);
+}
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__menu > span:last-child {
+  transform: rotate(-45deg);
+}
+.header .overlay {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(#2d314d, transparent);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+}
 .header nav {
   padding: 1.7rem 2.4rem;
 }
@@ -88,15 +108,6 @@ button:focus {
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 5px;
-}
-.header__menu.open > span:first-child {
-  transform: rotate(45deg);
-}
-.header__menu.open > span:nth-child(2) {
-  opacity: 0;
-}
-.header__menu.open > span:last-child {
-  transform: rotate(-45deg);
 }
 .header__links a {
   font-size: 1.4rem;
@@ -122,6 +133,34 @@ button:focus {
 }
 .header__links a:hover::before {
   width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.fade-in {
+  animation: fade-in 0.3s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.fade-out {
+  animation: fade-out 0.3s ease-in-out forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
