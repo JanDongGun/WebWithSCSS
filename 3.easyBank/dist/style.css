@@ -134,6 +134,16 @@ button:focus {
 .header__links a:hover::before {
   width: 100%;
 }
+.header__nav {
+  background-color: white;
+  padding: 2.6rem;
+}
+.header__nav a {
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  color: #2d314d;
+}
 
 @keyframes fade-in {
   from {

@@ -80,4 +80,15 @@
       }
     }
   }
+
+  &__nav {
+    background-color: $White;
+    padding: 2.6rem;
+    a {
+      display: block;
+      padding: 1rem 0;
+      text-align: center;
+      color: $darkBlue;
+    }
+  }
 }
