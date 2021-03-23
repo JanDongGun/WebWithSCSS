@@ -84,6 +84,15 @@
   &__nav {
     background-color: $White;
     padding: 2.6rem;
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 4.8rem);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-top: 2.4rem;
+    visibility: hidden;
+    opacity: 0;
     a {
       display: block;
       padding: 1rem 0;
